@@ -111,6 +111,17 @@
             PrintReference(new object());
 
             #endregion
+
+            #region Question09
+            // Q9: What is the 'new()' constraint? Write an example.
+            // The 'new()' constraint specifies that T must have a parameterless constructor.
+
+            var factory = new Factory<Student>();
+
+            Student s = factory.CreateInstance();
+            Console.WriteLine(s);
+
+            #endregion
         }
     }
 }
