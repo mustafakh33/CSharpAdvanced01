@@ -226,6 +226,19 @@
              */
 
             #endregion
+
+            #region Question17
+            // Q17: What is the difference between covariance and contravariance?
+            /*
+             Covariance allows a generic type with a more derived type
+             to be assigned to a generic type with a less derived type.
+             It is used for output (return types) and is denoted by the 'out' keyword.
+
+             Contravariance allows a generic type with a less derived type
+             to be assigned to a generic type with a more derived type.
+             It is used for input (method parameters) and is denoted by the 'in' keyword.
+             */
+            #endregion
         }
     }
 }
