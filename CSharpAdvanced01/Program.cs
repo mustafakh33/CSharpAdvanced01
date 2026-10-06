@@ -252,6 +252,17 @@
             Each one has its own separate static Count.
              */
             #endregion
+
+            #region Question19
+            // Q19: How can you inherit from a generic class?
+            /*
+             You can inherit from a generic class by specifying the type arguments when defining the derived class.
+             For example:
+                 public class MyDerivedClass : MyBaseClass<int>
+                 {
+                 }
+             */
+            #endregion
         }
     }
 }
