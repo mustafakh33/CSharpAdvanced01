@@ -212,6 +212,20 @@
             (output), not as a method parameter (input).
              */
             #endregion
+
+            #region Question16
+            // Q16: What is contravariance? Explain the 'in' keyword.
+            /*
+             Contravariance allows a generic type with a less derived type
+            to be assigned to a generic type with a more derived type.
+            
+            The 'in' keyword is used for contravariance.
+
+            A contravariant type parameter can only be used as an input
+            (method parameter), not as a return type. 
+             */
+
+            #endregion
         }
     }
 }
