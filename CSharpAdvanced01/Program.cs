@@ -27,6 +27,36 @@
             Console.WriteLine($"Key: {student.Key}");
             Console.WriteLine($"Value: {student.Value}");
             #endregion
+
+            #region Question04
+            // Q4: What is a generic method? Write Swap<T> method.
+
+            static void Swap<T>(ref T first, ref T second)
+            {
+                T temp = first;
+                first = second;
+                second = temp;
+            }
+
+            int x = 10;
+            int y = 20;
+
+            Console.WriteLine($"Before Swap: x = {x}, y = {y}");
+
+            Swap(ref x, ref y);
+
+            Console.WriteLine($"After Swap: x = {x}, y = {y}");
+
+            string firstName = "Mustafa";
+            string secondName = "Khaled";
+
+            Console.WriteLine($"Before Swap: {firstName}, {secondName}");
+
+            Swap(ref firstName, ref secondName);
+
+            Console.WriteLine($"After Swap: {firstName}, {secondName}");
+
+            #endregion
         }
     }
 }
