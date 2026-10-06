@@ -19,6 +19,14 @@
 
             Console.WriteLine(number);
             #endregion
+
+            #region Question03
+            // Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
+            Pair<int, string> student = new Pair<int, string>(101, "Mustafa");
+
+            Console.WriteLine($"Key: {student.Key}");
+            Console.WriteLine($"Value: {student.Value}");
+            #endregion
         }
     }
 }
