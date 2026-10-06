@@ -239,6 +239,19 @@
              It is used for input (method parameters) and is denoted by the 'in' keyword.
              */
             #endregion
+
+            #region Question18
+            // Q18: How do static members work in generic types?
+            /*
+             Static members in generic types are separate for each constructed type.
+
+            For example:
+                GenericCounter<int>
+                GenericCounter<string>
+
+            Each one has its own separate static Count.
+             */
+            #endregion
         }
     }
 }
