@@ -185,6 +185,20 @@
                      object -> null
              */
             #endregion
+
+            #region Question14
+            // Q14: Write a SafeList<T> that returns default when the index is invalid.
+            SafeList<int> safeList = new SafeList<int>();
+            safeList.Add(10);
+            safeList.Add(20);
+            safeList.Add(10);
+
+            Console.WriteLine(safeList[0]);
+            Console.WriteLine(safeList[1]);
+            Console.WriteLine(safeList[2]);
+            Console.WriteLine(safeList[3]); // This will return the default value for int, which is 0.
+
+            #endregion
         }
     }
 }
