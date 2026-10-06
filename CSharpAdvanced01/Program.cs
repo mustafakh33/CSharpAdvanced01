@@ -136,6 +136,22 @@
             PrintName(employee);
 
             #endregion
+
+            #region Question11
+            // Q11: What is the base class constraint? Write an example.
+            // The base class constraint specifies that T must inherit from a specific base class.
+            static void PrintInfo<T>(T item) where T : Product
+            {
+                Console.WriteLine($"Name: {item.Name}");
+            }
+            ElectronicProduct laptop = new ElectronicProduct
+            {
+                Name = "Dell Laptop"
+            };
+
+            PrintInfo(laptop);
+
+            #endregion
         }
     }
 }
