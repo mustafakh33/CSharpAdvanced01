@@ -70,6 +70,20 @@
             Console.WriteLine($"Max Number: {maxNumber}");
 
             #endregion
+
+            #region Question06
+            // Q6: What is a generic interface? Write IRepository<T>. 
+            /*
+             * A generic interface is an interface that uses a type parameter
+             * so it can work with different data types.
+
+             * IRepository<T> can be used with different types such as:
+             * IRepository<Product>
+             * IRepository<Employee>
+             * IRepository<Student>
+             */
+
+            #endregion
         }
     }
 }
