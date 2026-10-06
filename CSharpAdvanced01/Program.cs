@@ -199,6 +199,19 @@
             Console.WriteLine(safeList[3]); // This will return the default value for int, which is 0.
 
             #endregion
+
+            #region Question15
+            // Q15: What is covariance? Explain the 'out' keyword.
+            /*
+            Covariance allows a generic type with a more derived type
+            to be assigned to a generic type with a less derived type.
+            
+            The 'out' keyword is used for covariance.
+
+            A covariant type parameter can only be used as a return type
+            (output), not as a method parameter (input).
+             */
+            #endregion
         }
     }
 }
