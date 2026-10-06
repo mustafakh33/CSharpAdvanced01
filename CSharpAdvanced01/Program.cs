@@ -170,6 +170,21 @@
 
             DisplayInfo<ElectronicProduct>(Smartphone);
             #endregion
+
+            #region Question13
+            // Q13: What does the 'default' keyword do in generics?
+            /*
+              The 'default' keyword returns the default value of the generic type T.
+              For value types:
+                     int    -> 0
+                     double -> 0
+                     bool   -> false
+
+             For reference types:
+                     string -> null
+                     object -> null
+             */
+            #endregion
         }
     }
 }
