@@ -96,7 +96,20 @@
             PrintValue(100);
             PrintValue(3.14);
             PrintValue('A');
-           
+
+            #endregion
+
+            #region Question08
+            // Q8: What is the 'class' constraint? Write an example.
+            // The 'class' constraint specifies that T must be a reference type.
+            static void PrintReference<T>(T value) where T : class
+            {
+                Console.WriteLine($"Value: {value}");
+            }
+
+            PrintReference("Hello");
+            PrintReference(new object());
+
             #endregion
         }
     }
