@@ -57,6 +57,19 @@
             Console.WriteLine($"After Swap: {firstName}, {secondName}");
 
             #endregion
+
+            #region Question05
+            // Q5: Write a generic method FindMax<T> that finds maximum value
+
+            static T FindMax<T>(T first, T second) where T : IComparable<T>
+            {
+                return first.CompareTo(second) > 0 ? first : second;
+            }
+
+            int maxNumber = FindMax(10, 20);
+            Console.WriteLine($"Max Number: {maxNumber}");
+
+            #endregion
         }
     }
 }
