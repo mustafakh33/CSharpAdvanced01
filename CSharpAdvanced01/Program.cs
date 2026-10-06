@@ -84,6 +84,20 @@
              */
 
             #endregion
+
+            #region Question07
+            // Q7: What is the 'struct' constraint? Write an example.
+            // The 'struct' constraint specifies that T must be a value type.
+            static void PrintValue<T>(T value) where T : struct
+            {
+                Console.WriteLine($"Value: {value}");
+            }
+
+            PrintValue(100);
+            PrintValue(3.14);
+            PrintValue('A');
+           
+            #endregion
         }
     }
 }

@@ -13,4 +13,3 @@ namespace CSharpAdvanced01
         void Remove(int id);
     }
 }
-}
