@@ -152,6 +152,24 @@
             PrintInfo(laptop);
 
             #endregion
+
+            #region Question12
+            // Q12: How do you apply multiple constraints? Write an example
+           /* Multiple constraints can be applied to the same generic type
+              using multiple constraints in the where clause.
+           */
+           void DisplayInfo<T>(T item) where T : Product, IPrintable
+            {
+                Console.WriteLine($"Name: {item.Name}");
+                item.Print();
+            }
+            ElectronicProduct Smartphone = new ElectronicProduct
+            {
+                Name = "Smartphone"
+            };
+
+            DisplayInfo<ElectronicProduct>(Smartphone);
+            #endregion
         }
     }
 }
