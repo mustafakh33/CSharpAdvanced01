@@ -122,6 +122,20 @@
             Console.WriteLine(s);
 
             #endregion
+
+            #region Question10
+            // Q10:  What is the interface constraint? Write an example.
+            // The interface constraint specifies that T must implement a specific interface.
+            static void PrintName<T>(T item) where T : IPrintable
+            {
+                item.Print();
+            }
+
+            Employee employee = new Employee();
+
+            PrintName(employee);
+
+            #endregion
         }
     }
 }
